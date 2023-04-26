@@ -1,5 +1,9 @@
 FROM eclipse-temurin:latest
 
+LABEL version="2.2"
+LABEL maintaner="Nathan Sutton"
+LABEL release-date="2023-04-26"
+
 RUN \
     apt-get update && \
     apt-get -y upgrade && \
@@ -20,7 +24,3 @@ WORKDIR /hl7/hl7overhttp-relay/bin
 EXPOSE 8079
 
 ENTRYPOINT ["./hl7overhttp-relay","console"]
-
-LABEL version="2.2"
-LABEL maintaner="Nathan Sutton"
-LABEL release-date="2023-04-26"
