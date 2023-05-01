@@ -39,3 +39,5 @@ http://hl7api.sourceforge.net/hapi-hl7overhttp/relay_config.html
         <property name="listener" ref="theListener"/>
         <property name="sender" ref="theSender"/>
     </bean>
+    
+</beans>
