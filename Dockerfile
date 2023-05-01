@@ -19,6 +19,8 @@ RUN \
     curl -L https://sourceforge.net/projects/hl7api/files/hl7api-hl7overhttp/2.2/hapi-hl7overhttp-2.2-hapi-hl7overhttp-relay.tar.bz2/download -o hapi-hl7overhttp-relay.tar.bz2 && \
     tar -jxf hapi-hl7overhttp-relay.tar.bz2 
 
+COPY config.xml //hl7/hl7overhttp-relay/conf
+
 WORKDIR /hl7/hl7overhttp-relay/bin
 
 EXPOSE 8079
