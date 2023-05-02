@@ -14,6 +14,8 @@ RUN adduser --system --home /hl7 --disabled-password --group hl7
 WORKDIR /hl7
 USER hl7
 
+# extracted manuall from stodocker/hl7overhttp-relay
+# unknown ATM why the source distribution doesn't work
 COPY hl7overhttp-relay.tar.gz /hl7
 
 RUN \
