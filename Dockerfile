@@ -14,10 +14,10 @@ RUN adduser --system --home /hl7 --disabled-password --group hl7
 WORKDIR /hl7
 USER hl7
 
-COPY hl7overhttp.tar.gz /hl7
+COPY hl7overhttp-relay.tar.gz /hl7
 
 RUN \
-    tar –xvzf hapi-hl7overhttp-relay.tar.gz 
+    tar -xzvf hl7overhttp-relay.tar.gz 
 
 WORKDIR /hl7/hl7overhttp-relay/bin
 
