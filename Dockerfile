@@ -1,6 +1,6 @@
-FROM eclipse-temurin:latest
+FROM eclipse-temurin:21
 
-LABEL version="2.2"
+LABEL version="2.3"
 LABEL maintaner="Nathan Sutton"
 LABEL release-date="2023-04-26"
 
